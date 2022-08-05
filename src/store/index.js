@@ -3,9 +3,9 @@ import rootReducer from "../reducers";
 import rootSaga from "../sagas";
 import { routerMiddleware } from "react-router-redux";
 import createSagaMiddleware from "redux-saga";
-import createHistory from "history/createBrowserHistory";
+import { createBrowserHistory } from "history";
 
-export const history = createHistory();
+export const history = createBrowserHistory();
 const sagaMiddleware = createSagaMiddleware();
 
 const initialState = {};
